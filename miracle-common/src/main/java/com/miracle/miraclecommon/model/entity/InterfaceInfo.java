@@ -1,4 +1,4 @@
-package com.miracle.api.model.entity;
+package com.miracle.miraclecommon.model.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
@@ -8,8 +8,7 @@ import java.util.Date;
 
 /**
  * @author dargon
- * @create 2024-04-08
- * @description 接口信息
+ * @create 2024-04-09
  */
 @TableName(value ="interface_info")
 @Data
@@ -36,6 +35,14 @@ public class InterfaceInfo implements Serializable {
     private String url;
 
     /**
+     * 请求参数
+     * [
+     *   {"name": "username", "type": "string"}
+     * ]
+     */
+    private String requestParams;
+
+    /**
      * 请求头
      */
     private String requestHeader;
@@ -54,12 +61,6 @@ public class InterfaceInfo implements Serializable {
      * 请求类型
      */
     private String method;
-
-    /**
-     * 请求参数
-     */
-    private String requestParams;
-
 
     /**
      * 创建人
@@ -85,4 +86,3 @@ public class InterfaceInfo implements Serializable {
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 }
-

@@ -1,6 +1,5 @@
-package com.miracle.api.model.entity;
+package com.miracle.miraclecommon.model.vo;
 
-import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -8,16 +7,13 @@ import java.util.Date;
 
 /**
  * @author dargon
- * @create 2024-04-08
- * @description 用户信息
+ * @create 2024-04-09
  */
-@TableName(value = "user")
 @Data
-public class User implements Serializable {
+public class UserVO implements Serializable {
     /**
      * id
      */
-    @TableId(type = IdType.AUTO)
     private Long id;
 
     /**
@@ -29,17 +25,6 @@ public class User implements Serializable {
      * 账号
      */
     private String userAccount;
-
-    /**
-     * 签名 accessKey
-     */
-    private String accessKey;
-
-    /**
-     * 签名 secretKey
-     */
-    private String secretKey;
-
 
     /**
      * 用户头像
@@ -57,11 +42,6 @@ public class User implements Serializable {
     private String userRole;
 
     /**
-     * 密码
-     */
-    private String userPassword;
-
-    /**
      * 创建时间
      */
     private Date createTime;
@@ -71,12 +51,5 @@ public class User implements Serializable {
      */
     private Date updateTime;
 
-    /**
-     * 是否删除
-     */
-    @TableLogic
-    private Integer isDelete;
-
-    @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 }

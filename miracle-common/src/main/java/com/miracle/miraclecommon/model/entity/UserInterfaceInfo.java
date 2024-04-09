@@ -1,4 +1,4 @@
-package com.miracle.api.model.entity;
+package com.miracle.miraclecommon.model.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
@@ -9,12 +9,10 @@ import java.util.Date;
 /**
  * @author dargon
  * @create 2024-04-09
- * @description 用户调用接口管理表
  */
 @TableName(value ="user_interface_info")
 @Data
 public class UserInterfaceInfo implements Serializable {
-
     /**
      * 主键
      */
@@ -64,5 +62,4 @@ public class UserInterfaceInfo implements Serializable {
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
-
 }
