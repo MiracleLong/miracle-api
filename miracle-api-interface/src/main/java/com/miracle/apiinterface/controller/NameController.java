@@ -15,7 +15,8 @@ import javax.servlet.http.HttpServletRequest;
 public class NameController {
     @GetMapping("/get")
     public String getNameByGet(String name, HttpServletRequest request) {
-        System.out.println(request.getHeader("hui"));
+        System.out.println(request.getHeader("miracle"));
+
         return "GET 你的名字是" + name;
     }
 
@@ -47,7 +48,10 @@ public class NameController {
         if (!sign.equals(serverSign)) {
             throw new RuntimeException("无权限");
         }
-        return "POST 用户名字是" + user.getUsername();
+        // todo 调用次数 + 1 invokeCount
+        String result = "POST 用户名字是" + user.getUsername();
+        return result;
+
     }
 
 }
