@@ -1,7 +1,7 @@
 package com.miracle.api.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.miracle.api.model.entity.UserInterfaceInfo;
+import com.miracle.miraclecommon.model.entity.UserInterfaceInfo;
 
 /**
  * @author dargon

@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.miracle.api.annotation.AuthCheck;
 import com.miracle.api.common.ErrorCode;
 import com.miracle.api.exception.BusinessException;
-import com.miracle.api.model.entity.User;
+import com.miracle.miraclecommon.model.entity.User;
 import com.miracle.api.service.UserService;
 import org.apache.commons.lang3.StringUtils;
 import org.aspectj.lang.ProceedingJoinPoint;

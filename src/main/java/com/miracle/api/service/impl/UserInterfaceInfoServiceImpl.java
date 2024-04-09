@@ -5,8 +5,8 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.miracle.api.common.ErrorCode;
 import com.miracle.api.exception.BusinessException;
 import com.miracle.api.mapper.UserInterfaceInfoMapper;
-import com.miracle.api.model.entity.UserInterfaceInfo;
 import com.miracle.api.service.UserInterfaceInfoService;
+import com.miracle.miraclecommon.model.entity.UserInterfaceInfo;
 import org.springframework.stereotype.Service;
 
 /**

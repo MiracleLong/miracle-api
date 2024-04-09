@@ -1,7 +1,7 @@
 package com.miracle.api.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.miracle.api.model.entity.InterfaceInfo;
+import com.miracle.miraclecommon.model.entity.InterfaceInfo;
 
 /**
  * @author dargon
